@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: d011b984663be154db988a9ca0eaf6cc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NPC1 (1)_0
+    21300002: NPC1 (1)_1
+    21300004: NPC1 (1)_2
+    21300006: NPC1 (1)_3
+    21300008: NPC1 (1)_4
+    21300010: NPC1 (1)_5
+    21300012: NPC1 (1)_6
+    21300014: NPC1 (1)_7
+    21300016: NPC1 (1)_8
+    21300018: NPC1 (1)_9
+    21300020: NPC1 (1)_10
+    21300022: NPC1 (1)_11
+    21300024: NPC1 (1)_12
+    21300026: Morse_0
+    21300028: Morse_1
+    21300030: Morse_2
+    21300032: Morse_3
+    21300034: Morse_4
+    21300036: Morse_5
+    21300038: Morse_6
+    21300040: Morse_7
+    21300042: Morse_8
+    21300044: Morse_9
+    21300046: Morse_10
+    21300048: Morse_11
+    21300050: Morse_12
+    21300052: Morse_13
+    21300054: Morse_14
+    21300056: Morse_15
+    21300058: Morse_16
+    21300060: Morse_17
+    21300062: Morse_18
+    21300064: Morse_19
+    21300066: Morse_20
+    21300068: Morse_21
+    21300070: Morse_22
+    21300072: Morse_23
+    21300074: Morse_24
+    21300076: Morse_25
+    21300078: Morse_26
+    21300080: Morse_27
+    21300082: Morse_28
+    21300084: Morse_29
+    21300086: Morse_30
+    21300088: Morse_31
+    21300090: Morse_32
+    21300092: Morse_33
+    21300094: Morse_34
+    21300096: Morse_35
+    21300098: Morse_36
+    21300100: Morse_37
+    21300102: Morse_38
+    21300104: Morse_39
+    21300106: Morse_40
+    21300108: Morse_41
+    21300110: Morse_42
+    21300112: Morse_43
+    21300114: Morse_44
+    21300116: Morse_45
+    21300118: Morse_46
+    21300120: Morse_47
+    21300122: Morse_48
+    21300124: Morse_49
+    21300126: Morse_50
+    21300128: Morse_51
+    21300130: Morse_52
+    21300132: Morse_53
+    21300134: Morse_54
+    21300136: Morse_55
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Morse_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 544
+        width: 88
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ccc9162ab2f4dddb99b9332568f017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morse_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 548
+        width: 88
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1f7a736fe794d7d8ae7e7d24fbdeb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morse_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 544
+        width: 88
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae186fa807acc4cf686c0e55de21f58b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morse_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 292
+        width: 88
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8fecd61ca5f4ca0a1155ef40e3d504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morse_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 296
+        width: 100
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf088c95bede438fb022aee7eafff07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morse_5
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 300
+        width: 100
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9561988034240aa8be461dbaff1a83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morse_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 100
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace467e603316407ba9c06051f74d99a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6216a26afcdcc9543811e735650ad0eb
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
