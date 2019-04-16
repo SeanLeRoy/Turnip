@@ -13,9 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;
 
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 

@@ -33,8 +33,14 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void QuitGame()
+    public void SaveAndQuit()
     {
+        GameState gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        gameState.playerPosition = GameObject.Find("Parker").transform.position;
+        gameState.SavePlayer();
+        Debug.Log("In Save And Quit");
+        Debug.Log(gameState.playerPosition);
+
         // Can't quit in unity editor so check this log
         Debug.Log("QUIT!");
         Application.Quit();

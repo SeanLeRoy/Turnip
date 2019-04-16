@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -30,6 +31,24 @@ public class CharacterController2D : MonoBehaviour
     public BoolEvent OnCrouchEvent;
     private bool m_wasCrouching = false;
 
+    private void Start()
+    {
+        // Look for a game state to initialize parker
+        GameState gameState = GameObject.Find("GameState").GetComponent<GameState>();
+
+        Debug.Log("In Start for Parker");
+        Debug.Log(gameState.playerPosition);
+        // If we are on the scene loaded in
+        if (gameState.level == SceneManager.GetActiveScene().buildIndex) {
+            transform.position = gameState.playerPosition;
+        } else {
+            Debug.Log("Wrong Scene"); // TODO: Remove
+            gameState.level = SceneManager.GetActiveScene().buildIndex;
+            gameState.playerPosition = transform.position;
+            SaveSystem.SavePlayer(gameState);
+        }
+    }
+
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -40,6 +59,7 @@ public class CharacterController2D : MonoBehaviour
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
     }
+
 
     private void FixedUpdate()
     {
