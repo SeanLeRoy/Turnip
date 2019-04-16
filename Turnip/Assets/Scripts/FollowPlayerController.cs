@@ -9,6 +9,11 @@ public class FollowPlayerController : MonoBehaviour
 
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
+    public bool shouldAlsoFlip = false;
+    public CharacterController2D controller2d; // Indepedent controller that determines when to flip
+    public float flipDistance;
+
+
     // Use this for initialization
     void Start()
     {
@@ -20,6 +25,14 @@ public class FollowPlayerController : MonoBehaviour
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = player.transform.position + offset;
+        Vector3 newPosition = player.transform.position + offset;
+
+        if (shouldAlsoFlip) {
+            if (!controller2d.facingRight)
+            {
+                newPosition = new Vector3(newPosition.x - flipDistance * 2, newPosition.y, newPosition.z);
+            }
+        }
+        transform.position = newPosition;
     }
 }
