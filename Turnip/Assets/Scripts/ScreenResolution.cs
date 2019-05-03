@@ -9,13 +9,22 @@ public class ScreenResolution : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(640, 480, true);
-        Debug.Log("testing");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        int value = Resolution.value;
+
+        if(value == 0)
+        {
+            Screen.SetResolution(1024, 546, false);
+        } else if (value == 1)
+        {
+            Screen.SetResolution(1152, 648, false);
+        } else
+        {
+            Screen.SetResolution(1280, 720, false);
+        }
     }
 }
