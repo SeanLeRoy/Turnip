@@ -5,6 +5,7 @@ public class FollowPlayerController : MonoBehaviour
 {
 
     public GameObject player;       //Public variable to store a reference to the player game object
+    public bool onlyXAxis = false;
 
 
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
@@ -26,6 +27,10 @@ public class FollowPlayerController : MonoBehaviour
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         Vector3 newPosition = player.transform.position + offset;
+
+        if (onlyXAxis) {
+            newPosition.y = transform.position.y;
+        }
 
         if (shouldAlsoFlip) {
             if (!controller2d.facingRight)
