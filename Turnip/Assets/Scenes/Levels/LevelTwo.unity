@@ -5760,6 +5760,8 @@ MonoBehaviour:
   animator: {fileID: 685239493}
   speedMod: 1
   jumpMod: 1
+  health: 3
+  invincible: 0
   runSpeed: 40
 --- !u!58 &685239490
 CircleCollider2D:
@@ -11640,7 +11642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 685239486}
-  onlyXAxis: 0
+  onlyXAxis: 1
   shouldAlsoFlip: 0
   controller2d: {fileID: 0}
   flipDistance: 0
@@ -16868,6 +16870,8 @@ MonoBehaviour:
   animator: {fileID: 1376070352}
   speedMod: 1
   jumpMod: 1
+  health: 3
+  invincible: 0
   runSpeed: 40
 --- !u!58 &1376070348
 CircleCollider2D:
@@ -19754,7 +19758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 685239486}
-  onlyXAxis: 0
+  onlyXAxis: 1
   shouldAlsoFlip: 0
   controller2d: {fileID: 0}
   flipDistance: 0
