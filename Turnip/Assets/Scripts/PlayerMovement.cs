@@ -49,4 +49,20 @@ public class PlayerMovement : MonoBehaviour
             jumpMod--;
         }
 	}
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name.Equals("snowy_dark_block") || col.gameObject.name.Equals("snowy_dark_block (1)")
+        || col.gameObject.name.Equals("shiny_ice (5)") || col.gameObject.name.Equals("shiny_ice (11)")
+            || col.gameObject.name.Equals("snowy_dark_block (2)"))
+            this.transform.parent = col.transform;
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.name.Equals("snowy_dark_block") || col.gameObject.name.Equals("snowy_dark_block (1)")
+        || col.gameObject.name.Equals("shiny_ice (5)") || col.gameObject.name.Equals("shiny_ice (11)")
+            || col.gameObject.name.Equals("snowy_dark_block (2)"))
+            this.transform.parent = null;
+    }
 }
