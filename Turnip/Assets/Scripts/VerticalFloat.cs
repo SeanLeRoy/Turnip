@@ -7,11 +7,14 @@ public class VerticalFloat : MonoBehaviour
     float dirX, moveSpeed = 3f;
     bool moveUp = true;
 
+    public float startY = 0f;
+    public float endY = 0f;
+
     void Update() {
-        if (transform.position.y < 2.5f) 
+        if (transform.position.y < startY) 
             moveUp = true;
 
-        if (transform.position.y >= 6f)
+        if (transform.position.y >= endY)
             moveUp = false;
 
         if (moveUp)

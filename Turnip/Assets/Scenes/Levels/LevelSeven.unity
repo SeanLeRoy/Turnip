@@ -8652,7 +8652,7 @@ GameObject:
   - component: {fileID: 513045918}
   - component: {fileID: 513045917}
   m_Layer: 0
-  m_Name: snowy_dark_block (2)
+  m_Name: lv7p4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8684,6 +8684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a98f8ff34b5143218d943f9fe10e952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startX: 100
+  endX: 104
 --- !u!61 &513045918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10309,7 +10311,7 @@ GameObject:
   - component: {fileID: 897679131}
   - component: {fileID: 897679130}
   m_Layer: 0
-  m_Name: snowy_dark_block (1)
+  m_Name: lv7p2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10341,6 +10343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18af0c8fbcd0649a0868a9db464e58bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startY: 2.5
+  endY: 6
 --- !u!61 &897679131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11341,7 +11345,7 @@ GameObject:
   - component: {fileID: 1143868736}
   - component: {fileID: 1143868738}
   m_Layer: 0
-  m_Name: shiny_ice (5)
+  m_Name: lv7p3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11447,6 +11451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4980797c93ad04d4096f9d27814e1067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startX: 84
+  endX: 88
 --- !u!1 &1207619917
 GameObject:
   m_ObjectHideFlags: 0
@@ -14374,7 +14380,7 @@ GameObject:
   - component: {fileID: 1698524669}
   - component: {fileID: 1698524668}
   m_Layer: 0
-  m_Name: snowy_dark_block
+  m_Name: lv7p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14406,6 +14412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18af0c8fbcd0649a0868a9db464e58bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startY: 2.5
+  endY: 6
 --- !u!61 &1698524669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16457,7 +16465,7 @@ GameObject:
   - component: {fileID: 2031575344}
   - component: {fileID: 2031575343}
   m_Layer: 0
-  m_Name: shiny_ice (11)
+  m_Name: lv7p5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16486,9 +16494,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2031575341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225d6c577984448e0a740195490b71af, type: 3}
+  m_Script: {fileID: 11500000, guid: 4980797c93ad04d4096f9d27814e1067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startX: 110
+  endX: 115
 --- !u!61 &2031575344
 BoxCollider2D:
   m_ObjectHideFlags: 0

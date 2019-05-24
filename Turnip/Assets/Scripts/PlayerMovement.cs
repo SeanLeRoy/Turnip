@@ -52,17 +52,33 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.name.Equals("snowy_dark_block") || col.gameObject.name.Equals("snowy_dark_block (1)")
-        || col.gameObject.name.Equals("shiny_ice (5)") || col.gameObject.name.Equals("shiny_ice (11)")
-            || col.gameObject.name.Equals("snowy_dark_block (2)"))
+        if (col.gameObject.name.Equals("lv2p1") || col.gameObject.name.Equals("lv2p2")
+            || col.gameObject.name.Equals("lv2p3") || col.gameObject.name.Equals("lv4p1")
+            || col.gameObject.name.Equals("lv4p2") || col.gameObject.name.Equals("lv5p1")
+            || col.gameObject.name.Equals("lv5p2") || col.gameObject.name.Equals("lv5p3")
+            || col.gameObject.name.Equals("lv5p4") || col.gameObject.name.Equals("lv6p1") 
+            || col.gameObject.name.Equals("lv6p2") || col.gameObject.name.Equals("lv6p3") 
+            || col.gameObject.name.Equals("lv6p4") || col.gameObject.name.Equals("lv6p5") 
+            || col.gameObject.name.Equals("lv6p6") || col.gameObject.name.Equals("lv6p7")
+            || col.gameObject.name.Equals("lv7p1") || col.gameObject.name.Equals("lv7p2") 
+            || col.gameObject.name.Equals("lv7p3") || col.gameObject.name.Equals("lv7p4") 
+            || col.gameObject.name.Equals("lv7p5"))
             this.transform.parent = col.transform;
     }
 
     void OnCollisionExit2D(Collision2D col)
     {
-        if (col.gameObject.name.Equals("snowy_dark_block") || col.gameObject.name.Equals("snowy_dark_block (1)")
-        || col.gameObject.name.Equals("shiny_ice (5)") || col.gameObject.name.Equals("shiny_ice (11)")
-            || col.gameObject.name.Equals("snowy_dark_block (2)"))
+        if (col.gameObject.name.Equals("lv2p1") || col.gameObject.name.Equals("lv2p2")
+            || col.gameObject.name.Equals("lv2p3") || col.gameObject.name.Equals("lv4p1")
+            || col.gameObject.name.Equals("lv4p2") || col.gameObject.name.Equals("lv5p1")
+            || col.gameObject.name.Equals("lv5p2") || col.gameObject.name.Equals("lv5p3")
+            || col.gameObject.name.Equals("lv5p4") || col.gameObject.name.Equals("lv6p1")
+            || col.gameObject.name.Equals("lv6p2") || col.gameObject.name.Equals("lv6p3")
+            || col.gameObject.name.Equals("lv6p4") || col.gameObject.name.Equals("lv6p5")
+            || col.gameObject.name.Equals("lv6p6") || col.gameObject.name.Equals("lv6p7")
+            || col.gameObject.name.Equals("lv7p1") || col.gameObject.name.Equals("lv7p2")
+            || col.gameObject.name.Equals("lv7p3") || col.gameObject.name.Equals("lv7p4")
+            || col.gameObject.name.Equals("lv7p5"))
             this.transform.parent = null;
     }
 }

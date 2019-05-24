@@ -1584,7 +1584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0434e3ba13ecf40748e2a5387e901ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1065536102}
   onlyXAxis: 1
   shouldAlsoFlip: 0
   controller2d: {fileID: 0}
@@ -14270,11 +14270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0434e3ba13ecf40748e2a5387e901ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1065536102}
   onlyXAxis: 0
-  shouldAlsoFlip: 0
-  controller2d: {fileID: 0}
-  flipDistance: 0
+  shouldAlsoFlip: 1
+  controller2d: {fileID: 1065536107}
+  flipDistance: 0.75
 --- !u!114 &1364943900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14309,8 +14309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b75475079e4740039476444bf54dd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  animator: {fileID: 0}
+  controller: {fileID: 1364943905}
+  animator: {fileID: 1364943906}
   speedMod: 1
   jumpMod: 1
   health: 3
@@ -14391,15 +14391,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dea150a031184f96b65d6fafe14d8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
+  m_JumpForce: 700
+  m_CrouchSpeed: 1
   m_MovementSmoothing: 0.05
-  m_AirControl: 0
+  m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 0
-  m_GroundCheck: {fileID: 0}
-  m_CeilingCheck: {fileID: 0}
+    m_Bits: 55
+  m_GroundCheck: {fileID: 161669355}
+  m_CeilingCheck: {fileID: 1369555472}
   m_CrouchDisableCollider: {fileID: 0}
   facingRight: 1
   OnLandEvent:

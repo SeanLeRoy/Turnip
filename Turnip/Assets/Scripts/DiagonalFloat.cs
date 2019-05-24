@@ -7,12 +7,15 @@ public class DiagonalFloat : MonoBehaviour
     float dirX, moveSpeed = 3f;
     bool moveOver = true;
 
+    public float startX = 0f;
+    public float endX = 0f;
+
     void Update()
     {
-        if (transform.position.x < 100f)
+        if (transform.position.x < startX)
             moveOver = true;
 
-        if (transform.position.x >= 104f)
+        if (transform.position.x >= endX)
             moveOver = false;
 
         if (moveOver)
