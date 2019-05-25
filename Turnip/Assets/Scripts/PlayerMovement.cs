@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (health == 0)
         {
+            Debug.Log("parker is dead");
             // die
         }
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed *speedMod;
