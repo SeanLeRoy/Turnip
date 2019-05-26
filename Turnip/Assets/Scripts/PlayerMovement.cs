@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -26,8 +28,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (health == 0)
         {
-            Debug.Log("parker is dead");
-            // die
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed *speedMod;
 

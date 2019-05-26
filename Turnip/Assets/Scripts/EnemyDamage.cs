@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
 
-class EnemyDamage : MonoBehaviour
+public class EnemyDamage : MonoBehaviour
 {
     bool damageEnemy = false;
     double lastDamage = 0;
-    int enemyHealth = 3;
+    public int enemyHealth = 3;
+    public string enemyName;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         PlayerMovement player = GameObject.Find("Parker").GetComponent<PlayerMovement>();
+        GameObject enemy = GameObject.Find(enemyName);
 
+        if(enemyHealth == 0)
+        {
+            Destroy(enemy);
+        }
         double currentTime = Time.fixedTime;
 
         if ((currentTime - lastDamage) > 1)
