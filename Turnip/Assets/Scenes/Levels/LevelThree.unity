@@ -2898,6 +2898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01abb81c96fd2b429f9d8e2c4c821ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: 3
+  enemyName: bat
 --- !u!61 &445164735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15842,6 +15844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01abb81c96fd2b429f9d8e2c4c821ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: 3
+  enemyName: 
 --- !u!50 &1464203297
 Rigidbody2D:
   serializedVersion: 4
@@ -18780,6 +18784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01abb81c96fd2b429f9d8e2c4c821ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: 3
+  enemyName: frog
 --- !u!61 &2077080078
 BoxCollider2D:
   m_ObjectHideFlags: 0
