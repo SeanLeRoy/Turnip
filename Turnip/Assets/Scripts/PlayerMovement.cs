@@ -19,13 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;
 
-	// Update is called once per frame
-	void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (invincible)
-        {
-            health = 3;
-        }
         if (health == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

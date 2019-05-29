@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class EnemyDamage : MonoBehaviour
 {
     bool damageEnemy = false;
     double lastDamage = 0;
-    public int enemyHealth = 3;
+    private int enemyHealth = 1;
     public string enemyName;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -30,7 +32,6 @@ public class EnemyDamage : MonoBehaviour
             {
                 // Debug.Log("damageParker");
                 player.health--;
-
             }
             Debug.Log("parker health: " + player.health);
             Debug.Log("enemy health: " + enemyHealth);
