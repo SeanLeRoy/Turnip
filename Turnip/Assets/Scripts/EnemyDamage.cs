@@ -4,7 +4,7 @@ public class EnemyDamage : MonoBehaviour
 {
     bool damageEnemy = false;
     double lastDamage = 0;
-    public int enemyHealth = 3;
+    public int enemyHealth = 1;
     public string enemyName;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -23,17 +23,13 @@ public class EnemyDamage : MonoBehaviour
             lastDamage = Time.fixedTime;
             if (damageEnemy)
             {
-                // Debug.Log("damageEnemy");
                 enemyHealth--;
             }
             else
             {
-                // Debug.Log("damageParker");
                 player.health--;
 
             }
-            Debug.Log("parker health: " + player.health);
-            Debug.Log("enemy health: " + enemyHealth);
         }
     }
     private void Update()
