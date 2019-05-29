@@ -22,10 +22,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed *speedMod;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
