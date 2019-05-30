@@ -12,21 +12,66 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 9d0ee7f86ee914a119e2fade5507282c
   - enabled: 1
+    path: Assets/Scenes/Narratives/Scene1.unity
+    guid: ff7c85344fd5b4d7ca397da50d4f57a5
+  - enabled: 1
     path: Assets/Scenes/Levels/LevelOne.unity
     guid: 17b6f6a5185d744faba602f0bd92efd4
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene2.unity
+    guid: cb5a294efa22442a2a9877ec5965fb09
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene3.unity
+    guid: 3b8ab672b4e494d5bba94eb61edb7612
   - enabled: 1
     path: Assets/Scenes/Levels/LevelTwo.unity
     guid: 2b647a472aa7a4e1887a10238e3dacf2
   - enabled: 1
+    path: Assets/Scenes/Narratives/Scene4.unity
+    guid: 9ebe94a7e93a94885aa59f7edda69b76
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene5.unity
+    guid: e7ead90c9838a412782f9e28f83e289f
+  - enabled: 1
     path: Assets/Scenes/Levels/LevelThree.unity
     guid: 1b89d2ac8ab864416b3e9c660e7e3758
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene6.unity
+    guid: 5eef6db1fee944ef1b4e4850fe8ab2aa
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene7.unity
+    guid: f35703fabca4b4b7ebb03133fbde24c1
   - enabled: 1
     path: Assets/Scenes/Levels/LevelFour.unity
     guid: a991f58ec6a09452c80744893680d040
   - enabled: 1
+    path: Assets/Scenes/Narratives/Scene8.unity
+    guid: 05858d3f37fde44e9bfdd42dfb0c4589
+  - enabled: 1
     path: Assets/Scenes/Levels/LevelFive.unity
     guid: d9574e6c56a1a45d597452d206129ec5
   - enabled: 1
+    path: Assets/Scenes/Narratives/Scene9.unity
+    guid: f9b13f77aaaa844a6b786b3450d69c47
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene10.unity
+    guid: 6b86484f9dda048d297a0e561afcc590
+  - enabled: 1
     path: Assets/Scenes/Levels/LevelSix.unity
     guid: da4200d356e1c424c9a7cbe9d5aac4e7
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene11.unity
+    guid: d52278f14fb8f42b2bb1029716b8621a
+  - enabled: 1
+    path: Assets/Scenes/Levels/LevelSeven.unity
+    guid: cd70e1d48d04d4e9b82feb2e2e785fde
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene12.unity
+    guid: c8dda5383bcac4218a222a16659022dd
+  - enabled: 1
+    path: Assets/Scenes/Narratives/Scene13.unity
+    guid: 39ebd271d82c24b04adb564f5e03160c
+  - enabled: 1
+    path: Assets/Scenes/Levels/LevelEight.unity
+    guid: 0d3501653abab4853ba3270fe8a23650
   m_configObjects: {}

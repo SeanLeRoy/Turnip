@@ -1,18 +1,12 @@
 fileFormatVersion: 2
 guid: 30f92fdeb8ae90240992bdba41753310
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 5158404753353345565
-    second: frog_0
-  - first:
-      213: -6160767750220376532
-    second: frog_1
-  - first:
-      213: -8667238115605912382
-    second: frog_2
+  fileIDToRecycleName:
+    21300000: frog_0
+    21300002: frog_1
+    21300004: frog_2
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,7 +102,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: beccd36682b39a64998b952791cdb234
-      internalID: 5158404753353345565
       vertices: []
       indices: 
       edges: []
@@ -129,7 +122,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8e39ed2beb2230e4188575549cbb9084
-      internalID: -6160767750220376532
       vertices: []
       indices: 
       edges: []
@@ -150,7 +142,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 098b9c264859a8a469c5408461a62014
-      internalID: -8667238115605912382
       vertices: []
       indices: 
       edges: []
@@ -159,12 +150,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 0167237d89077854181356bbc356ac06
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

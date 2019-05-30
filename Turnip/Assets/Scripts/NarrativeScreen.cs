@@ -34,7 +34,7 @@ public class NarrativeScreen : MonoBehaviour
 
             FindObjectOfType<DialogueManager>().StartDialogue(nextDialogue, newBox);
         } else {
-            // TODO: when done testin SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
