@@ -31,10 +31,12 @@ public class EnemyDamage : MonoBehaviour
             lastDamage = Time.fixedTime;
             if (damageEnemy)
             {
+                Debug.Log("damage enemy");
                 enemyHealth--;
             }
             else
             {
+                Debug.Log("damage Parker");
                 parkerHealth--;
                 GameObject heart3 = GameObject.Find("Heart 3");
                 GameObject heart2 = GameObject.Find("Heart 2");
