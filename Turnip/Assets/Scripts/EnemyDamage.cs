@@ -7,7 +7,7 @@ public class EnemyDamage : MonoBehaviour
     bool damageEnemy = false;
     double lastDamage = 0;
     private int enemyHealth = 1;
-    public int parkerHealth = 3;
+    private int parkerHealth = 3;
     public string enemyName;
 
     private void Awake()
@@ -31,12 +31,30 @@ public class EnemyDamage : MonoBehaviour
             lastDamage = Time.fixedTime;
             if (damageEnemy)
             {
+                Debug.Log("damage enemy");
                 enemyHealth--;
             }
             else
             {
+                Debug.Log("damage Parker");
                 parkerHealth--;
-                hearts();
+                GameObject heart3 = GameObject.Find("Heart 3");
+                GameObject heart2 = GameObject.Find("Heart 2");
+                GameObject heart1 = GameObject.Find("Heart 1");
+                if (heart3 != null && parkerHealth < 3)
+                {
+                    Destroy(heart3);
+                }
+                if (heart2 != null && parkerHealth < 2)
+                {
+                    Destroy(heart2);
+                }
+                if (heart1 != null && parkerHealth < 1)
+                {
+                    Destroy(heart1);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+                }
             }
         }
     }
@@ -50,33 +68,5 @@ public class EnemyDamage : MonoBehaviour
         {
             damageEnemy = false;
         }
-    }
-
-    private void hearts()
-    {
-        GameObject heart3 = GameObject.Find("Heart 3");
-        GameObject heart2 = GameObject.Find("Heart 2");
-        GameObject heart1 = GameObject.Find("Heart 1");
-        if (heart3 != null && parkerHealth < 3)
-        {
-            Destroy(heart3);
-        }
-        if (heart2 != null && parkerHealth < 2)
-        {
-            Destroy(heart2);
-        }
-        if (heart1 != null && parkerHealth < 1)
-        {
-            Destroy(heart1);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-        }
-    }
-
-    public void hearts(int damage)
-    {
-        parkerHealth--;
-        Debug.Log(parkerHealth);
-        this.hearts();
     }
 }
