@@ -7,9 +7,8 @@ public class SpikeDamage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        EnemyDamage enemyDamage = new EnemyDamage();
-        Debug.Log(enemyDamage.parkerHealth);
-        enemyDamage.hearts(1);
+        PlayerMovement player = GameObject.Find("Parker").GetComponent<PlayerMovement>();
+        player.takeDamage();
     }
 }
 

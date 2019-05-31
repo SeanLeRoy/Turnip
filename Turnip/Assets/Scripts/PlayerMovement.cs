@@ -45,6 +45,28 @@ public class PlayerMovement : MonoBehaviour
         }
 	}
 
+    public void takeDamage()
+    {
+        health--;
+        GameObject heart3 = GameObject.Find("Heart 3");
+        GameObject heart2 = GameObject.Find("Heart 2");
+        GameObject heart1 = GameObject.Find("Heart 1");
+        if (heart3 != null && health < 3)
+        {
+            Destroy(heart3);
+        }
+        if (heart2 != null && health < 2)
+        {
+            Destroy(heart2);
+        }
+        if (heart1 != null && health < 1)
+        {
+            Destroy(heart1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name.Equals("lv2p1") || col.gameObject.name.Equals("lv2p2")

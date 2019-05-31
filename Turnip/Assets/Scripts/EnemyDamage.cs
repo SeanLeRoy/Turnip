@@ -35,8 +35,7 @@ public class EnemyDamage : MonoBehaviour
             }
             else
             {
-                parkerHealth--;
-                hearts();
+                player.takeDamage();
             }
         }
     }
@@ -50,33 +49,5 @@ public class EnemyDamage : MonoBehaviour
         {
             damageEnemy = false;
         }
-    }
-
-    private void hearts()
-    {
-        GameObject heart3 = GameObject.Find("Heart 3");
-        GameObject heart2 = GameObject.Find("Heart 2");
-        GameObject heart1 = GameObject.Find("Heart 1");
-        if (heart3 != null && parkerHealth < 3)
-        {
-            Destroy(heart3);
-        }
-        if (heart2 != null && parkerHealth < 2)
-        {
-            Destroy(heart2);
-        }
-        if (heart1 != null && parkerHealth < 1)
-        {
-            Destroy(heart1);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-        }
-    }
-
-    public void hearts(int damage)
-    {
-        parkerHealth--;
-        Debug.Log(parkerHealth);
-        this.hearts();
     }
 }
