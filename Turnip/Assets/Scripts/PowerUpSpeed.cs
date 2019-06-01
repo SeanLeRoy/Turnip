@@ -8,5 +8,6 @@ class PowerUpSpeed : MonoBehaviour
         player.speedMod = 2;
         GameObject chest = GameObject.Find("chest");
         Destroy(chest);
+        // play chest sound effect here
     }
 }
