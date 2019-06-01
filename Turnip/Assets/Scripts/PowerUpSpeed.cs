@@ -6,5 +6,7 @@ class PowerUpSpeed : MonoBehaviour
     {
         PlayerMovement player = GameObject.Find("Parker").GetComponent<PlayerMovement>();
         player.speedMod = 2;
+        GameObject chest = GameObject.Find("chest");
+        Destroy(chest);
     }
 }
