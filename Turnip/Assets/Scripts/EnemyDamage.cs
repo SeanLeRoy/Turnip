@@ -10,9 +10,18 @@ public class EnemyDamage : MonoBehaviour
     public int parkerHealth = 3;
     public string enemyName;
 
+    private AudioClip enemyHitSound;
+    private AudioClip playerHitSound;
+    private AudioSource audioSource;
+
     private void Awake()
     {
         parkerHealth = 4;
+
+        // find and load audio files
+        audioSource = gameObject.AddComponent<AudioSource>();
+        enemyHitSound = Resources.Load<AudioClip>("Assets/Props/Game Music/DamageGiven.mp3");
+        playerHitSound = Resources.Load<AudioClip>("Assets/Props/Game Music/DamageTaken.mp3");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,10 +41,12 @@ public class EnemyDamage : MonoBehaviour
             if (damageEnemy)
             {
                 enemyHealth--;
+                audioSource.PlayOneShot(enemyHitSound);
             }
             else
             {
                 player.takeDamage();
+                audioSource.PlayOneShot(playerHitSound);
             }
         }
     }
