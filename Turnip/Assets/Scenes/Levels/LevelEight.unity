@@ -762,6 +762,7 @@ GameObject:
   - component: {fileID: 256876047}
   - component: {fileID: 256876049}
   - component: {fileID: 256876048}
+  - component: {fileID: 256876050}
   m_Layer: 0
   m_Name: lamp (4)
   m_TagString: Untagged
@@ -857,6 +858,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &256876050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256876046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f55b8355d9fd4f27bfea5d4eeb3b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Parker
+    sentences:
+    - Today I will abandon my destructive behaviors and start using behaviors that
+      are good for me.
 --- !u!1 &328734173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1225,7 @@ GameObject:
   - component: {fileID: 405041178}
   - component: {fileID: 405041180}
   - component: {fileID: 405041179}
+  - component: {fileID: 405041181}
   m_Layer: 0
   m_Name: lamp (3)
   m_TagString: Untagged
@@ -1302,6 +1321,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &405041181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405041177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f55b8355d9fd4f27bfea5d4eeb3b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Parker
+    sentences:
+    - "I don\u2019t need my eating disorder to be good enough."
 --- !u!1 &474616974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1780,7 @@ GameObject:
   - component: {fileID: 709078558}
   - component: {fileID: 709078560}
   - component: {fileID: 709078559}
+  - component: {fileID: 709078561}
   m_Layer: 0
   m_Name: lamp (2)
   m_TagString: Untagged
@@ -1840,6 +1876,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &709078561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709078557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f55b8355d9fd4f27bfea5d4eeb3b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Parker
+    sentences:
+    - "How I feel about myself has nothing to do with what I eat or don\u2019t eat."
 --- !u!1 &736474988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +1902,8 @@ GameObject:
   m_Component:
   - component: {fileID: 736474989}
   - component: {fileID: 736474990}
+  - component: {fileID: 736474992}
+  - component: {fileID: 736474991}
   m_Layer: 0
   m_Name: barrier
   m_TagString: Untagged
@@ -1919,6 +1973,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &736474991
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736474988}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.22}
+    newSize: {x: 0.42, y: 0.22}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.22}
+  m_EdgeRadius: 0
+--- !u!114 &736474992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736474988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f55b8355d9fd4f27bfea5d4eeb3b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Parker
+    sentences:
+    - I want to accept treatment for my eating disorder.
 --- !u!1 &749520295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +2763,8 @@ GameObject:
   m_Component:
   - component: {fileID: 851052627}
   - component: {fileID: 851052628}
+  - component: {fileID: 851052630}
+  - component: {fileID: 851052629}
   m_Layer: 0
   m_Name: hydrant (1)
   m_TagString: Untagged
@@ -2736,6 +2834,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &851052629
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851052626}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.15, y: 0.19}
+    newSize: {x: 0.15, y: 0.19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.19}
+  m_EdgeRadius: 0
+--- !u!114 &851052630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851052626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f55b8355d9fd4f27bfea5d4eeb3b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Parker
+    sentences:
+    - 'There are people who love and care about me. '
 --- !u!1 &883876310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3291,8 +3431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8468368c2d684c5fab6d5923fd00961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
+  nameText: {fileID: 1646654160}
+  dialogueText: {fileID: 1908097833}
   animator: {fileID: 11245464}
   narrativeScreen: {fileID: 0}
 --- !u!4 &1120468485
@@ -10151,8 +10291,8 @@ MonoBehaviour:
   dialogue:
     name: Parker
     sentences:
-    - "The process of recovery may be an epic one, but it\u2019s worth it and I know
-      it."
+    - "The process of recovery may be an difficult one, but it\u2019s worth it and
+      I know it."
 --- !u!1 &1756784906
 GameObject:
   m_ObjectHideFlags: 0
@@ -11135,6 +11275,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2030165052}
   - component: {fileID: 2030165053}
+  - component: {fileID: 2030165055}
+  - component: {fileID: 2030165054}
   m_Layer: 0
   m_Name: trashcan
   m_TagString: Untagged
@@ -11204,3 +11346,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2030165054
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030165051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.21, y: 0.21}
+    newSize: {x: 0.21, y: 0.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.21, y: 0.21}
+  m_EdgeRadius: 0
+--- !u!114 &2030165055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030165051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f55b8355d9fd4f27bfea5d4eeb3b3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Parker
+    sentences:
+    - I am courageous and from today I will stand up for myself.
