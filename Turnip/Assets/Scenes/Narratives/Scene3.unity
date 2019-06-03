@@ -150,12 +150,6 @@ MonoBehaviour:
     dialogues:
     - name: SCENE
       sentences:
-      - "[The game opens in a dorm room. We meet our protagonist, Parker, who is putting
-        finishing touches on bedspreads, computer setup, hanging posters, etc. They
-        scored a single room as a freshman, so it\u2019s small but all their own.
-        Parker is sitting on their bed, phone in hand, texting] "
-    - name: SCENE
-      sentences:
       - '[Parker sleepily reaches over to turn off their alarm clock.]'
     - name: Parker
       sentences:
